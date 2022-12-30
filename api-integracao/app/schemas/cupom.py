@@ -1,7 +1,4 @@
-from pydantic import BaseModel, EmailStr
-from pydantic.types import conint
-from datetime import datetime
-from typing import Optional
+from pydantic import BaseModel
 
 class CupomCreate(BaseModel):
     id: int
@@ -16,3 +13,4 @@ class CupomOut(BaseModel):
 
 class CupomUpdate(BaseModel):
     usado: bool = True
+
