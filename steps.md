@@ -12,6 +12,6 @@ Cria a pasta app e coloca tudo la dentro, em seguida cria o __init__.py
 Passa a utilizar o comando uvicorn app.main:app --reload
 
 Gera as dependencias
-pip freeze > requirements.txt
+pip list --format=freeze >requirements.txt
 
 heroku git: remote -a americanas-backend-api
