@@ -1,5 +1,5 @@
-conda create --name envplsql
-conda activate envplsql
+Abre o CMD como adm e digita python -m venv nomedoambiente
+roda o .bat de dentro da pasta do virtualenv 
 
 pip install fastapi
 
@@ -11,7 +11,8 @@ Cria a pasta app e coloca tudo la dentro, em seguida cria o __init__.py
 
 Passa a utilizar o comando uvicorn app.main:app --reload
 
-Gera as dependencias
-pip list --format=freeze >requirements.txt
+Gerar as dependencias
+pip install pip_chill
+pip-chill --no-version> requirements.txt
 
 heroku git: remote -a americanas-backend-api
